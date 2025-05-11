@@ -1,0 +1,47 @@
+[tool.uv]
+find-links = [
+    "https://storage.googleapis.com/jax-releases/libtpu_releases.html",
+]
+prerelease = "allow"
+
+[project]
+name = "acme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.10"
+
+dependencies = [
+    "numpy~=1.26",
+    "jax[tpu]==0.4.24",
+    # "jaxlib==0.4.24",
+    "chex",
+    "dm-haiku==0.0.12",
+    "flax",
+    "optax",
+    "rlax",
+    "dm-sonnet",
+    "trfl",
+    "tensorflow==2.8.0",
+    "tensorflow_probability==0.15.0",
+    "tensorflow_datasets==4.6.0",
+    "dm-reverb==0.7.2",
+    "dm-launchpad==0.5.2",
+    "pytype==2021.8.11",
+    "pytest-xdist",
+    "atari-py",
+    "bsuite",
+    "dm-control",
+    "gym==0.25.0",
+    "gym[atari]",
+    "pygame==2.1.0",
+    "rlds",
+    "protobuf~=3.20",
+]
+[dependency-groups]
+dev = [
+    "ipykernel",
+    # "pytest",
+    # "black",
+    # 其他开发工具...
+]
