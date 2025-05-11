@@ -9,24 +9,25 @@ name = "acme"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = "~=3.10"
+requires-python = "==3.10.*"
 
 dependencies = [
-    "numpy~=1.26",
-    "jax[tpu]==0.4.24",
+    "numpy",#~=1.26
+    "jax[tpu]==0.4.6",
     # "jaxlib==0.4.24",
+    "dm-haiku==0.0.10",
+    "scipy==1.7.*",
     "chex",
-    "dm-haiku==0.0.12",
     "flax",
     "optax",
     "rlax",
     "dm-sonnet",
     "trfl",
-    "tensorflow==2.8.0",
-    "tensorflow_probability==0.15.0",
-    "tensorflow_datasets==4.6.0",
-    "dm-reverb==0.7.2",
-    "dm-launchpad==0.5.2",
+    'tensorflow==2.8.0',
+    'tensorflow_probability==0.15.0',
+    'tensorflow_datasets==4.6.0',
+    'dm-reverb==0.7.2',
+    'dm-launchpad==0.5.2',
     "pytype==2021.8.11",
     "pytest-xdist",
     "atari-py",
